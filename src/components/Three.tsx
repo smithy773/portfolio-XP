@@ -15,9 +15,11 @@ export default function Three() {
     );
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.domElement.id = "threejs-element";
     // document.body.appendChild( renderer.domElement );
     // use ref as a mount point of the Three.js scene instead of the document.body
     refContainer.current &&
+      !document.getElementById("threejs-element") &&
       refContainer.current.appendChild(renderer.domElement);
     const geometry = new THREE.BoxGeometry(1, 1, 1);
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
