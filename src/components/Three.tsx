@@ -34,5 +34,5 @@ export default function Three() {
     };
     animate();
   }, []);
-  return <div ref={refContainer}></div>;
+  return <div className="w-40 h-40" ref={refContainer}></div>;
 }
