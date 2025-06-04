@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import NoPage from "./components/Pages/NoPage/NoPage";
+import NavBar from "./components/Nav/NavBar";
+import Home from "./components/Pages/Home/Home";
+import About from "./components/Pages/About/About";
+import Projects from "./components/Pages/Projects/Projects";
+import Hobbies from "./components/Pages/Hobbies/Hobbies";
 // import Three from "./components/Three";
 
 export default function App(): React.JSX.Element {
@@ -9,20 +14,15 @@ export default function App(): React.JSX.Element {
   return (
     <BrowserRouter>
       <h1>{title}</h1>
-      {/* NAVBAR */}
+      <NavBar graphic={null} />
       <Routes>
-        <Route index element={"home"} />
-        <Route path="about" element={"about"} />
-        <Route path="projects" element={"projects"} />
-        <Route path="hobbies" element={"hobbies"} />
+        <Route index element={<Home setTitle={setTitle} />} />
+        <Route path="about" element={<About setTitle={setTitle} />} />
+        <Route path="projects" element={<Projects setTitle={setTitle} />} />
+        <Route path="hobbies" element={<Hobbies setTitle={setTitle} />} />
         <Route path="*" element={<NoPage setTitle={setTitle} />} />
       </Routes>
     </BrowserRouter>
-    // <div>
-    //   TITLE
-    //   NAV BAR
-    //   <h1>Portfolio, eventually</h1>
     //   <Three />
-    // </div>
   );
 }

@@ -1,15 +1,15 @@
 import type { PageProps } from "../../..";
 
-export default function Home({
+export default function Projects({
   setTitle,
 }: {
   setTitle: PageProps;
 }): React.JSX.Element {
-  setTitle("Viktor Kolev");
+  setTitle("Projects");
 
   return (
     <>
-      <h1>TOVA E HOME</h1>
+      <h1>TOVA E PROJECTS</h1>
     </>
   );
 }
