@@ -8,6 +8,7 @@ interface NavBarProps {
 }
 
 export default function NavBar({ graphic }: NavBarProps) {
+  console.log(`${graphic} No graphic yet`);
   return (
     <nav className="flex gap-6">
       <NavLink
