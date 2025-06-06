@@ -6,7 +6,11 @@ import Home from "./components/Pages/Home/Home";
 import About from "./components/Pages/About/About";
 import Projects from "./components/Pages/Projects/Projects";
 import Hobbies from "./components/Pages/Hobbies/Hobbies";
+import * as THREE from "three";
 // import Three from "./components/Three";
+
+
+THREE.Cache.enabled = true;
 
 export default function App(): React.JSX.Element {
   const [title, setTitle] = useState("Viktor Kolev");
