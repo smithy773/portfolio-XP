@@ -7,8 +7,7 @@ import About from "./components/Pages/About/About";
 import Projects from "./components/Pages/Projects/Projects";
 import Hobbies from "./components/Pages/Hobbies/Hobbies";
 import * as THREE from "three";
-// import Three from "./components/Three";
-
+import Three from "./components/Three/Three";
 
 THREE.Cache.enabled = true;
 
@@ -26,7 +25,7 @@ export default function App(): React.JSX.Element {
         <Route path="hobbies" element={<Hobbies setTitle={setTitle} />} />
         <Route path="*" element={<NoPage setTitle={setTitle} />} />
       </Routes>
+      <Three objToRender="pine" />
     </BrowserRouter>
-    //   <Three />
   );
 }
