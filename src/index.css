@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --color-gray: #232b30;
+}
+
+* {
+  font-family: "Nunito";
+}

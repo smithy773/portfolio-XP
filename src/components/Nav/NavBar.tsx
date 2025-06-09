@@ -3,18 +3,14 @@
 import { NavLink } from "react-router";
 // import Pine from "../Three/Pine";
 // import { Canvas } from "react-three-fiber";
-interface NavBarProps {
-  graphic: null;
-}
 
-export default function NavBar({ graphic }: NavBarProps) {
-  console.log(`${graphic} No graphic yet`);
+export default function NavBar() {
   return (
-    <nav className="flex gap-6">
+    <nav className="flex gap-6 lg:text-3xl text-xl font-semibold justify-self-center mt-4">
       <NavLink
         to=""
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
+          isPending ? "pending" : isActive ? "text-cyan-500 text-xl" : ""
         }
       >
         <div className="flex gap-1.5">
@@ -27,7 +23,7 @@ export default function NavBar({ graphic }: NavBarProps) {
       <NavLink
         to="/about"
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
+          isPending ? "pending" : isActive ? "text-cyan-500" : ""
         }
       >
         <div className="flex gap-1.5">
@@ -38,7 +34,7 @@ export default function NavBar({ graphic }: NavBarProps) {
       <NavLink
         to="/projects"
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
+          isPending ? "pending" : isActive ? "text-cyan-500" : ""
         }
       >
         <div className="flex gap-1.5">
@@ -49,12 +45,23 @@ export default function NavBar({ graphic }: NavBarProps) {
       <NavLink
         to="/hobbies"
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
+          isPending ? "pending" : isActive ? "text-cyan-500" : ""
         }
       >
         <div className="flex gap-1.5">
           {/* <h1>Graphic</h1> */}
           <p>Hobbies</p>
+        </div>
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "text-cyan-500" : ""
+        }
+      >
+        <div className="flex gap-1.5">
+          {/* <h1>Graphic</h1> */}
+          <p>Contact</p>
         </div>
       </NavLink>
     </nav>
