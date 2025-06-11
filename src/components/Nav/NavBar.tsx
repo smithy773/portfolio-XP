@@ -10,7 +10,7 @@ export default function NavBar() {
     "hover:text-cyan-500 hover:scale-105 transition-all duration-200";
 
   return (
-    <nav className="flex gap-6  justify-center lg:text-3xl text-xl font-semibold justify-self-center mt-4">
+    <nav className="flex sm:gap-6 gap-2 justify-center lg:text-3xl text-xl font-semibold justify-self-center mt-4">
       <NavLink
         to=""
         className={({ isActive, isPending }) =>
