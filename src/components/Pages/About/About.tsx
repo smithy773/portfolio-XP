@@ -22,7 +22,8 @@ export default function About({
       <p>
         Well, no - not really. If you buy me a coffee{" "}
         {"(or a beer if you're brave enough)"} I'll probably talk your ear off.
-        A summarized version of what you might hear:
+        A summarized version of what you might hear is in the whole website but
+        here's an interesting piece:
       </p>
       <section>
         <p>
@@ -38,44 +39,6 @@ export default function About({
           my sights on Front-End Development as a start, but ended up falling in
           love with it in the process of learning. I saved up for year, got into
           Telerik Academy's Alpha JavaScript course and here I am now!
-        </p>
-      </section>
-      <section>
-        <p>
-          I LOVE music - especially rock music. Top artists would be Queens of
-          the Stone Age, DOWN, The Smashing Pumpkins, Led Zeppelin and Black
-          Sabbath.
-        </p>
-        {/* concert collage or click image to open a carousel */}
-      </section>
-      <section>
-        {/* paintings collage or click image to open a carousel */}
-        <p>
-          I've mentioned drawing and painting - here it is! While I'm not a
-          great artist, I still love painting my silly landscapes, even if they
-          are not all that good. I'm proud of them and that will show in a
-          future project I'm working on {";)"}
-        </p>
-      </section>
-      <section>
-        <p>
-          In my opinion, the best place a person can be is the woods. Or in the
-          rolling plains. Or the sea, mountains - ok, to put it simply, just
-          walk until you can't see the city or any city for that matter. That's
-          where a person ought to be.
-        </p>
-        {/* outdoors collage or click image to open a carousel */}
-      </section>
-      <section>
-        {/* games collage or click image to open a carousel */}
-        <p>
-          I also mentioned games... No other way to go about it - I'm a geek and
-          I love Magic: The Gathering, Warhammer 40,000, Settlers of Catan and
-          other boardgames. As for video games, I've played them since I was
-          three years old. They're pretty much as part of me as the breath I
-          take. My favorites are Resident Evil, Singularity, Team Fortress 2,
-          Firewatch, Cyberpunk 2077 and many, many more that will take too much
-          space to list through.
         </p>
       </section>
     </div>
