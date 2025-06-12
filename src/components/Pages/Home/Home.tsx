@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import type { PageProps } from "../../..";
+import PageCont from "../PageCont/PageCont";
 
 export default function Home({
   setTitle,
@@ -9,7 +10,7 @@ export default function Home({
   setTitle("Viktor Kolev");
 
   return (
-    <div className="flex flex-col xl:mx-15 sm:mx-10 mx-6 my-20">
+    <PageCont>
       <main className="grid xl:grid-cols-3 sm:grid-cols-2 sm:grid-rows-1 grid-rows-2 mb-15">
         <div>
           <h1 className="lg:text-6xl text-5xl font-bold mb-0.5 sm:">
@@ -43,6 +44,6 @@ export default function Home({
       <p className="md:text-2xl text-xl self-center">
         Thank you for your time! Have a great day and stay safe! :{")"}
       </p>
-    </div>
+    </PageCont>
   );
 }

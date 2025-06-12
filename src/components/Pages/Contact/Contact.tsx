@@ -1,4 +1,5 @@
 import type { PageProps } from "../../..";
+import PageCont from "../PageCont/PageCont";
 
 export default function Contact({
   setTitle,
@@ -7,5 +8,9 @@ export default function Contact({
 }): React.JSX.Element {
   setTitle("Contact");
 
-  return <>EMAIL CONTACT THINGIE</>;
+  return (
+    <PageCont>
+      <h1>EMAIL CONTACT THINGIE</h1>
+    </PageCont>
+  );
 }

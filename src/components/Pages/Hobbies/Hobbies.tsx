@@ -1,4 +1,5 @@
 import type { PageProps } from "../../..";
+import PageCont from "../PageCont/PageCont";
 
 export default function Hobbies({
   setTitle,
@@ -8,7 +9,7 @@ export default function Hobbies({
   setTitle("Hobbies");
 
   return (
-    <div>
+    <PageCont>
       <h1>What's a person without hobbies?</h1>
       <p>
         You might say a "professional" or very "busy" person - I say "boring"!
@@ -54,6 +55,6 @@ export default function Hobbies({
           space to list through.
         </p>
       </section>
-    </div>
+    </PageCont>
   );
 }
