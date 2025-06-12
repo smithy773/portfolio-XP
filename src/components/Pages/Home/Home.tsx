@@ -1,6 +1,7 @@
 import { NavLink } from "react-router";
 import type { PageProps } from "../../..";
 import PageCont from "../PageCont/PageCont";
+import MediumHeading from "../../Heading/MediumHeading";
 
 export default function Home({
   setTitle,
@@ -13,12 +14,12 @@ export default function Home({
     <PageCont>
       <main className="grid xl:grid-cols-3 sm:grid-cols-2 sm:grid-rows-1 grid-rows-2 mb-15">
         <div>
-          <h1 className="lg:text-6xl text-5xl font-bold mb-0.5 sm:">
+          <h1 className="lg:text-6xl text-5xl font-bold mb-0.5">
             Hello there!
           </h1>
-          <h3 className="md:text-3xl text-cyan-500 text-2xl font-semibold mb-2">
+          <MediumHeading className="mb-2">
             I'm Viktor - an aspiring Front-End Developer.
-          </h3>
+          </MediumHeading>
           <p className="sm:text-xl text-md">
             This website contains some interesting information about me - both
             as a person and as a developer. If you think I'm a good fit for a

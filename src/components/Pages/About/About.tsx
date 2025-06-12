@@ -1,4 +1,5 @@
 import type { PageProps } from "../../..";
+import ParagraphBackgr from "../../ParagraphBackgr/ParagraphBackgr";
 import PageCont from "../PageCont/PageCont";
 
 export default function About({
@@ -10,29 +11,34 @@ export default function About({
 
   return (
     <PageCont className="gap-10">
-      <section className="grid grid-cols-2 grid-rows-2 gap-x-100">
+      <section className="lg:flex xl:gap-x-40 lg:gap-x-10">
         {/* Heading + paragraph below it */}
-        <h3 className="text-4xl text-cyan-500 col-start-1 row-start-1">
-          Hey, nice to meet you!
-        </h3>
-        <p className="col-start-1 row-start-2">
-          My name's Viktor Kolev. I'm 21 years old {"(turning 22 in July)"} and
-          I'm from Aytos, Bulgaria, although I'm living in Sofia. My goal is to
-          become a Front-End Developer, have fun while doing so, paint
-          landscapes, listen to good music, eat tasty food, love and be loved.
-        </p>
-
-        {/* Heading + paragraph below it */}
-        <h3 className="text-4xl text-cyan-500">Is that all?</h3>
-        <p>
-          Well, no - not really. If you buy me a coffee{" "}
-          {"(or a beer if you're brave enough)"} I'll probably talk your ear
-          off. A summarized version of what you might hear is in the whole
-          website but here's an interesting piece:
-        </p>
+        <div className="mb-6">
+          <h1 className="xl:text-5xl text-4xl font-bold text-cyan-500 mb-2">
+            Hey, nice to meet you!
+          </h1>
+          <ParagraphBackgr>
+            My name's Viktor Kolev. I'm 21 years old {"(turning 22 in July)"}{" "}
+            and I'm from Aytos, Bulgaria, although I'm living in Sofia. My goal
+            is to become a Front-End Developer, have fun while doing so, paint
+            landscapes, listen to good music, eat tasty food, love and be loved.
+          </ParagraphBackgr>
+        </div>
+        <div>
+          {/* Heading + paragraph below it */}
+          <h1 className="xl:text-5xl text-4xl font-bold text-cyan-500 mb-2">
+            Is that all?
+          </h1>
+          <ParagraphBackgr>
+            Well, no - not really. If you buy me a coffee{" "}
+            {"(or a beer if you're brave enough)"} I'll probably talk your ear
+            off. A summarized version of what you might hear is in the whole
+            website but here you can find an interesting piece of my story.
+          </ParagraphBackgr>
+        </div>
       </section>
       <section>
-        <p>
+        <ParagraphBackgr>
           {/* baby viktor image */}
           Why Front-End Development? Pretty much my whole life has been spent
           drawing, playing video games, watching TV Shows and having fun with
@@ -40,24 +46,24 @@ export default function About({
           one! I'm comfortable using pretty much everything a typical PC has to
           offer, so I know what users might want in their apps / websites {":)"}
           .
-        </p>
+        </ParagraphBackgr>
       </section>
       <section>
-        <p>
+        <ParagraphBackgr>
           Knowing this, my family tried pushing me into IT studies from a young
           age, however I never tried anything IT related until I decided to drop
           out of Journalism at Sofia University. Having done so, I set my sights
           on Front-End Development as a start, but ended up falling in love with
           it in the process of learning.
-        </p>
+        </ParagraphBackgr>
         {/* me in 2022-2023 */}
       </section>
       <section>
         {/* me now */}
-        <p>
+        <ParagraphBackgr>
           I saved up for year, got into Telerik Academy's Alpha JavaScript
           course, finished it and here I am now!
-        </p>
+        </ParagraphBackgr>
       </section>
     </PageCont>
   );

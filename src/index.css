@@ -2,8 +2,10 @@
 
 @theme {
   --color-gray: #232b30;
+  --color-lightgray: #252e33;
 }
 
 * {
   font-family: "Nunito";
+  /* background-color: #293338; */
 }
