@@ -1,5 +1,6 @@
 import type { PageProps } from "../../..";
 import PageCont from "../PageCont/PageCont";
+import ContactForm from "./ContactForm";
 
 export default function Contact({
   setTitle,
@@ -10,7 +11,7 @@ export default function Contact({
 
   return (
     <PageCont>
-      <h1>EMAIL CONTACT THINGIE</h1>
+      <ContactForm />
     </PageCont>
   );
 }

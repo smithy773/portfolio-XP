@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.backgr-p {
+  background-color: #252e33;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+}
 @theme {
   --color-gray: #232b30;
   --color-lightgray: #252e33;
