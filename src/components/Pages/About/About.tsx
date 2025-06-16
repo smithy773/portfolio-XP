@@ -1,5 +1,4 @@
 import type { PageProps } from "../../..";
-import PageCont from "../PageCont/PageCont";
 
 export default function About({
   setTitle,
@@ -9,9 +8,8 @@ export default function About({
   setTitle("About");
 
   return (
-    <PageCont className="gap-10">
+    <div className="page-cont gap-10 xl:mx-15 sm:mx-10">
       <section className="lg:flex xl:gap-x-40 lg:gap-x-10">
-        {/* Heading + paragraph below it */}
         <div className="mb-6">
           <h1 className="xl:text-5xl text-4xl font-bold text-cyan-500 mb-2">
             Hey, nice to meet you!
@@ -24,7 +22,6 @@ export default function About({
           </p>
         </div>
         <div>
-          {/* Heading + paragraph below it */}
           <h1 className="xl:text-5xl text-4xl font-bold text-cyan-500 mb-2">
             Is that all?
           </h1>
@@ -64,6 +61,6 @@ export default function About({
           course, finished it and here I am now!
         </p>
       </section>
-    </PageCont>
+    </div>
   );
 }

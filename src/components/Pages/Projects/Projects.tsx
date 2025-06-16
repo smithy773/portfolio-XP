@@ -1,6 +1,4 @@
 import type { PageProps } from "../../..";
-import MediumHeading from "../../Heading/MediumHeading";
-import PageCont from "../PageCont/PageCont";
 
 export default function Projects({
   setTitle,
@@ -10,13 +8,13 @@ export default function Projects({
   setTitle("Projects");
 
   return (
-    <PageCont>
+    <div className="page-cont xl:mx-15 sm:mx-10">
       <h1 className="lg:text-6xl text-5xl font-bold">My work so far</h1>
-      <MediumHeading className="">
+      <h3 className="medium-h md:text-3xl">
         Here you can find all the best projects I've worked or am currently
         working on. Hope you like them!
-      </MediumHeading>
+      </h3>
       <section></section>
-    </PageCont>
+    </div>
   );
 }

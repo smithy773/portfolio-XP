@@ -1,6 +1,4 @@
 import type { PageProps } from "../../..";
-import MediumHeading from "../../Heading/MediumHeading";
-import PageCont from "../PageCont/PageCont";
 
 export default function Hobbies({
   setTitle,
@@ -10,16 +8,16 @@ export default function Hobbies({
   setTitle("Hobbies");
 
   return (
-    <PageCont>
+    <div className="page-cont xl:mx-15 sm:mx-10">
       <h1 className="lg:text-6xl sm:text-4xl text-3xl font-bold">
         What's a person without hobbies?
       </h1>
-      <MediumHeading>
+      <h3 className="medium-h md:text-3xl">
         You might say a "professional" or very "busy" person - I say "boring"!
         Hobbies and interests are what makes us unique. Without them, life's
         only about eating and doing the thing that comes after eating. Here's
         what makes me interesting:
-      </MediumHeading>
+      </h3>
       <section className="flex flex-col gap-10 mt-5">
         <section>
           <p className="backgr-p">
@@ -27,10 +25,10 @@ export default function Hobbies({
             the Stone Age, DOWN, The Smashing Pumpkins, Led Zeppelin and Black
             Sabbath.
           </p>
-          {/* concert collage or click image to open a carousel */}
+          {/* concert */}
         </section>
         <section>
-          {/* paintings collage or click image to open a carousel */}
+          {/* painting */}
           <p className="backgr-p">
             I've mentioned drawing and painting - here it is! While I'm not a
             great artist, I still love painting my silly landscapes, even if
@@ -45,10 +43,10 @@ export default function Hobbies({
             just walk until you can't see the city or any city for that matter.
             That's where a person ought to be.
           </p>
-          {/* outdoors collage or click image to open a carousel */}
+          {/* outdoors */}
         </section>
         <section>
-          {/* games collage or click image to open a carousel */}
+          {/* games collage */}
           <p className="backgr-p">
             I also mentioned games... No other way to go about it - I'm a geek
             and I love Magic: The Gathering, Warhammer 40,000, Settlers of Catan
@@ -60,6 +58,6 @@ export default function Hobbies({
           </p>
         </section>
       </section>
-    </PageCont>
+    </div>
   );
 }

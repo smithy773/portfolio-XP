@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../../../store/enums";
 
 export default function ContactForm() {
   // @ts-ignore
@@ -18,8 +19,8 @@ export default function ContactForm() {
     };
 
     emailjs
-      .send("service_g2e1bkt", "template_g5lkrax", templateParams, {
-        publicKey: "7Hmud7QnYWYG4CcBD",
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, {
+        publicKey: PUBLIC_KEY,
       })
       .then(
         () => {
