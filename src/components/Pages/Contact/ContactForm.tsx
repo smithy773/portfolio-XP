@@ -1,21 +1,32 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../../../store/enums";
+import type { ShowModalFN } from "../../..";
 
-export default function ContactForm() {
+export default function ContactForm({ setShowModal }: ShowModalFN) {
   // @ts-ignore
   const form = useRef<HTMLFormElement>();
-
   const sendEmail = (e: React.SyntheticEvent) => {
     e.preventDefault();
 
+    // @ts-ignore
+    let name = form.current.querySelector("#name").value;
+    // @ts-ignore
+    let email = form.current.querySelector("#email").value;
+    // @ts-ignore
+    let message = form.current.querySelector("#message").value;
+
+    console.log(name, typeof name, name.length);
+
+    if (name.length < 1 || email.length < 1 || message.length < 1) {
+      setShowModal(true);
+      return;
+    }
+
     let templateParams = {
-      // @ts-ignore
-      name: form.current.querySelector("#name").value,
-      // @ts-ignore
-      email: form.current.querySelector("#email").value,
-      // @ts-ignore
-      message: form.current.querySelector("#message").value,
+      name,
+      email,
+      message,
     };
 
     emailjs
@@ -25,6 +36,12 @@ export default function ContactForm() {
       .then(
         () => {
           console.log("SUCCESS!");
+          // @ts-ignore
+          form.current.querySelector("#name").value = "";
+          // @ts-ignore
+          form.current.querySelector("#email").value = "";
+          // @ts-ignore
+          form.current.querySelector("#message").value = "";
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -34,7 +51,7 @@ export default function ContactForm() {
 
   return (
     <form
-      className="flex flex-col items-center gap-8 border-2 rounded-md border-cyan-500 p-8 m-auto"
+      className="flex flex-col items-center gap-8 md:border-4 border-3 rounded-md border-cyan-500 p-8 m-auto z-0"
       ref={form}
       onSubmit={sendEmail}
     >
@@ -62,7 +79,7 @@ export default function ContactForm() {
         </div>
       </div>
       <input
-        className="outline-cyan-500 outline-3 rounded px-3 py-1 hover:bg-cyan-500 transition-all hover:cursor-pointer text-3xl"
+        className="btn font-bold px-3 py-1 outline-3 text-3xl"
         type="submit"
         value="Send"
       />

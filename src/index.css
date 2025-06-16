@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+.btn {
+  background-color: #00b8db;
+  outline-style: solid;
+  outline-color: #00b8db;
+  border-radius: 6px;
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.btn:hover {
+  background-color: #232b30;
+  cursor: pointer;
+}
+
+.form-empty {
+  background-color: #b14a4a;
+}
+
 .form-div {
   display: flex;
   flex-direction: column;
@@ -20,7 +38,7 @@
 }
 
 .medium-h {
-  color: #00b3d6;
+  color: #00b8db;
   font-size: 1.5rem;
   line-height: calc(2 / 1.5);
   font-weight: 600;

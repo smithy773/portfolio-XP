@@ -16,7 +16,7 @@ export default function App(): React.JSX.Element {
 
   return (
     <BrowserRouter>
-      <div className="max-w-screen w-screen h-screen grid grid-cols-1 place-content-start bg-gray text-white">
+      <div className="max-w-screen w-screen sm:h-screen h-fill grid grid-cols-1 place-content-start bg-gray text-white">
         <h1 className="lg:text-6xl md:text-5xl text-4xl lg:mt-6 mt-4 font-bold justify-self-center">
           {title}
         </h1>
