@@ -11,9 +11,16 @@ export default function NoPage({
   const navigate = useNavigate();
 
   return (
-    <>
-      <h3>What are you doing here?</h3>
-      <a onClick={() => navigate(-1)}>Back</a>
-    </>
+    <div className="page-cont items-center gap-4 mx-auto lg:my-16 md:my-12 my-10">
+      <h3 className="xl:text-5xl text-4xl font-bold text-cyan-500 mb-2">
+        What are you doing here?
+      </h3>
+      <a
+        className="btn text-2xl font-semibold px-4 py-1"
+        onClick={() => navigate(-1)}
+      >
+        Back
+      </a>
+    </div>
   );
 }

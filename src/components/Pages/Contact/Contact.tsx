@@ -12,7 +12,7 @@ export default function Contact({
   const [showModal, setShowModal] = useState<boolean>(false);
 
   return (
-    <div className="page-cont items-center gap-4 page-cont xl:mx-15 sm:mx-10">
+    <div className="page-cont items-center gap-4 xl:mx-15 mx-10 lg:my-16 md:my-12 my-10">
       <div>
         <h1 className="lg:text-6xl text-5xl font-bold mb-0.5">
           Want to get in touch?

@@ -8,7 +8,7 @@ export default function Hobbies({
   setTitle("Hobbies");
 
   return (
-    <div className="page-cont xl:mx-15 sm:mx-10">
+    <div className="page-cont lg:mx-32 md:mx-20 mx-10 lg:my-16 md:my-12 my-10">
       <h1 className="lg:text-6xl sm:text-4xl text-3xl font-bold">
         What's a person without hobbies?
       </h1>

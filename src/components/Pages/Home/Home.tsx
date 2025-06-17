@@ -9,7 +9,7 @@ export default function Home({
   setTitle("Viktor Kolev");
 
   return (
-    <div className="page-cont xl:mx-15 sm:mx-10">
+    <div className="page-cont lg:mx-32 md:mx-20 sm:mx-10 lg:my-16 md:my-12 my-10">
       <main className="grid xl:grid-cols-3 sm:grid-cols-2 sm:grid-rows-1 grid-rows-2 mb-15">
         <div>
           <h1 className="lg:text-6xl text-5xl font-bold mb-0.5">
