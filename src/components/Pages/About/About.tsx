@@ -8,7 +8,7 @@ export default function About({
   setTitle("About");
 
   return (
-    <div className="page-cont gap-10 lg:mx-32 md:mx-20 mx-10 lg:my-16 md:my-12 my-10">
+    <div className="page-cont gap-10 lg:mx-32 md:mx-20 mx-10 lg:my-6 md:my-5 my-4">
       <section className="lg:flex xl:gap-x-40 lg:gap-x-10">
         <div className="mb-6">
           <h1 className="xl:text-5xl text-4xl font-bold text-cyan-500 mb-2">

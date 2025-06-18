@@ -1,44 +1,44 @@
-import { NavLink } from 'react-router';
-import type { PageProps } from '../../..';
+import { NavLink } from "react-router";
+import type { PageProps } from "../../..";
 
 export default function Home({
   setTitle,
 }: {
   setTitle: PageProps;
 }): React.JSX.Element {
-  setTitle('Viktor Kolev');
+  setTitle("Viktor Kolev");
 
   return (
-    <div className='page-cont lg:mx-32 md:mx-20 sm:mx-10 lg:my-16 md:my-12 my-10'>
-      <main className='grid xl:grid-cols-3 sm:grid-cols-2 sm:grid-rows-1 grid-rows-2 mb-15'>
+    <div className="page-cont lg:mx-32 md:mx-20 sm:mx-10 lg:my-16 md:my-12 my-10">
+      <main className="grid xl:grid-cols-3 sm:grid-cols-2 sm:grid-rows-1 grid-rows-2 mb-15">
         <div>
-          <h1 className='lg:text-6xl text-5xl font-bold mb-0.5'>
+          <h1 className="lg:text-6xl text-5xl font-bold mb-0.5">
             Hello there!
           </h1>
-          <h3 className='medium-h md:text-3xl mb-2'>
+          <h3 className="medium-h md:text-3xl text-2xl mb-2">
             I'm Viktor - an aspiring Front-End Developer.
           </h3>
-          <p className='sm:text-xl text-md'>
+          <p className="sm:text-xl text-md">
             This website contains some interesting information about me - both
             as a person and as a developer. If you think I'm a good fit for a
-            job {'(anything web dev related)'} or simply want to get in contact
+            job {"(anything web dev related)"} or simply want to get in contact
             with me for any reason at all, please do so at any time by going to
-            the{' '}
+            the{" "}
             {
-              <NavLink to={'/contact'} className='text-cyan-500'>
+              <NavLink to={"/contact"} className="text-cyan-500">
                 Contact
               </NavLink>
-            }{' '}
+            }{" "}
             page.
           </p>
         </div>
-        <div className='bg-amber-50 xl:col-span-2'>
+        <div className="bg-amber-50 xl:col-span-2">
           {/* REMOVE DIV, ADD IMAGE */}
         </div>
       </main>
 
-      <p className='md:text-2xl text-xl self-center'>
-        Thank you for your time! Have a great day and stay safe! :{')'}
+      <p className="md:text-2xl text-xl self-center">
+        Thank you for your time! Have a great day and stay safe! :{")"}
       </p>
     </div>
   );

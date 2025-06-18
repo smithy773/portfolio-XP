@@ -11,7 +11,7 @@ export default function NoPage({
   const navigate = useNavigate();
 
   return (
-    <div className="page-cont items-center gap-4 mx-auto lg:my-16 md:my-12 my-10">
+    <div className="page-cont items-center gap-4 mx-auto lg:my-6 md:my-5 my-4">
       <h3 className="xl:text-5xl text-4xl font-bold text-cyan-500 mb-2">
         What are you doing here?
       </h3>

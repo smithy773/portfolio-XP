@@ -1,13 +1,13 @@
-export interface ModalInfoProps {
+export interface ModalInfoType {
   title: string;
   description: string;
 }
 
-interface ModalStoreProps {
-  [key: string]: ModalInfoProps;
+interface ModalStoreType {
+  [key: string]: ModalInfoType;
 }
 
-export const ModalStore: ModalStoreProps = {
+export const ModalStore: ModalStoreType = {
   success: {
     title: "Message sent!",
     description:
