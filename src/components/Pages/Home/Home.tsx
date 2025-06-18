@@ -9,10 +9,10 @@ export default function Home({
   setTitle('Viktor Kolev');
 
   return (
-    <div className='page-cont lg:mx-32 md:mx-20 sm:mx-10 lg:my-16 md:my-12 my-10'>
+    <div className='page-cont  lg:mx-32 md:mx-20 sm:mx-10 lg:my-16 md:my-12 my-10'>
       <main className='flex lg:flex-row flex-col justify-center items-center gap-10 sm:mx-20 mx-8 mb-15'>
         <div className='max-w-xl'>
-          <h1 className='lg:text-6xl text-5xl font-bold mb-0.5'>
+          <h1 className='lg:text-6xl text-4xl font-bold mb-0.5'>
             Hello there!
           </h1>
           <h3 className='medium-h md:text-3xl text-2xl mb-2'>
@@ -37,8 +37,7 @@ export default function Home({
           className='rounded-md max-w-full h-auto object-contain border-cyan-500 border-3 shadow-lg'
         />
       </main>
-
-      <p className='md:text-2xl text-xl self-center'>
+      <p className='md:text-2xl text-xl text-center'>
         Thank you for your time! Have a great day and stay safe! :{')'}
       </p>
     </div>
