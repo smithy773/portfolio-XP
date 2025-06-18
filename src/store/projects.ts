@@ -12,18 +12,17 @@ interface Projects {
 
 export const projects: Projects = {
   hangman: {
-    title: "Hangman",
-    description:
-      "The classic Hangman game, but made online with React, TypeScript and CSS.",
-    imgSrc: "/imgs/hangman.PNG",
-    link: "https://hangman-ts.web.app",
-    github: "https://github.com/smithy773/hangman-game-TS-React",
+    title: 'Hangman',
+    description: 'The classic Hangman game, but made online.',
+    imgSrc: '/imgs/hangman.PNG',
+    link: 'https://hangman-ts.web.app',
+    github: 'https://github.com/smithy773/hangman-game-TS-React',
   },
   viaoutd: {
-    title: "VIAOutdoors",
+    title: 'VIAOutdoors',
     description: `A forum for sharing your outdoor experiences.`,
-    imgSrc: "/imgs/viaoutd.png",
-    link: "https://via-outdoors-d6d97.web.app",
-    github: "https://github.com/GIPHY-Web-Team-Project/VIA-Outdoor-Forum",
+    imgSrc: '/imgs/viaoutd.png',
+    link: 'https://via-outdoors-d6d97.web.app',
+    github: 'https://github.com/GIPHY-Web-Team-Project/VIA-Outdoor-Forum',
   },
 };
