@@ -10,7 +10,7 @@ export default function Home({
 
   return (
     <div className='page-cont lg:mx-32 md:mx-20 sm:mx-10 lg:my-16 md:my-12 my-10'>
-      <main className='grid xl:grid-cols-3 sm:grid-cols-2 sm:grid-rows-1 grid-rows-2 mb-15'>
+      <main className='flex items-center gap-60 mx-40 mr-60 mb-15'>
         <div>
           <h1 className='lg:text-6xl text-5xl font-bold mb-0.5'>
             Hello there!
@@ -32,9 +32,10 @@ export default function Home({
             page.
           </p>
         </div>
-        <div className='bg-amber-50 xl:col-span-2'>
-          {/* REMOVE DIV, ADD IMAGE */}
-        </div>
+        <img
+          src='/imgs/me.JPG'
+          className='rounded-md max-w-full h-auto object-contain border-cyan-500 border-3 shadow-lg'
+        />
       </main>
 
       <p className='md:text-2xl text-xl self-center'>

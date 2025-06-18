@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 .btn {
   background-color: #00b8db;
@@ -41,12 +41,21 @@
   font-weight: 600;
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @theme {
   --color-gray: #232b30;
   --color-lightgray: #252e33;
 }
 
 * {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   /* background-color: #293338; */
 }

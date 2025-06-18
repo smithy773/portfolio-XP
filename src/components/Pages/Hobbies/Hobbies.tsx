@@ -20,7 +20,7 @@ export default function Hobbies({
         only about eating and doing the thing that comes after eating. Here's
         what makes me interesting:
       </h3>
-      <section className='flex flex-col mt-5'>
+      <section className='flex flex-col mt-10'>
         <section className='flex lg:flex-row lg:gap-4 flex-col items-center justify-evenly'>
           {/* Concert */}
           <Card text={hobbies.music.text} imgSrc={hobbies.music.imgSrc} />

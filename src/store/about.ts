@@ -15,7 +15,7 @@ export const about: CardsType = {
           out of Journalism at Sofia University. I set my sights
           on Front-End Development only as a start, but ended up falling in love with
           it in the process of learning.`,
-    imgSrc: '/imgs/2022-2023.jpg',
+    imgSrc: '/imgs/2023.jpg',
   },
   third: {
     text: `I saved up for year, got into Telerik Academy's Alpha JavaScript
