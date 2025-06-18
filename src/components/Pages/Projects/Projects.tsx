@@ -34,6 +34,37 @@ export default function Projects({
           github={projects.viaoutd.github}
         />
       </section>
+      <section className='flex lg:flex-row lg:gap-4 flex-col items-center justify-evenly'>
+        <Project
+          title={projects.newsletter.title}
+          description={projects.newsletter.description}
+          imgSrc={projects.newsletter.imgSrc}
+          link={projects.newsletter.link}
+          github={projects.newsletter.github}
+        />
+        <div className='flex max-w-xl xl:w-xl lg:w-lg w-auto xl:max-h-fit border-3 border-cyan-500 rounded-md mb-4'>
+          <div className='backgr-p'>
+            <h3 className='medium-h lg:text-3xl md:text-2xl text-xl'>
+              {projects.github.title}
+            </h3>
+            <p className='xl:text-xl md:text-lg sm:text-md'>
+              {projects.github.description} Available{' '}
+              <a
+                href={projects.github.link}
+                target='_blank'
+                className='text-cyan-500'
+              >
+                here
+              </a>
+              .
+            </p>
+          </div>
+          <img
+            src={projects.github.imgSrc}
+            className='lg:h-60 h-40 lg:block hidden'
+          />
+        </div>
+      </section>
     </div>
   );
 }
