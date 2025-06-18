@@ -12,7 +12,7 @@ export default function About({
   return (
     <div className='page-cont items-center lg:mx-32 md:mx-20 mx-10 lg:my-6 md:my-5 my-4'>
       <section className='lg:flex xl:gap-x-40 lg:gap-x-10'>
-        <div className='mb-6'>
+        <div className='mb-6 max-w-xl'>
           <h1 className='xl:text-5xl text-4xl font-bold text-cyan-500 mb-2'>
             Hey, nice to meet you!
           </h1>
@@ -23,7 +23,7 @@ export default function About({
             landscapes, listen to good music, eat tasty food, love and be loved.
           </p>
         </div>
-        <div>
+        <div className='mb-6 max-w-xl'>
           <h1 className='xl:text-5xl text-4xl font-bold text-cyan-500 mb-2'>
             Is that all?
           </h1>
