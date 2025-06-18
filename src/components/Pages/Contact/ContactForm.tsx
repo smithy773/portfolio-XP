@@ -1,9 +1,15 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "../../../store/enums";
-import type { ShowModalFN } from "../../..";
+import type { ShowModalFN, SuccessFN } from "../../..";
 
-export default function ContactForm({ setShowModal }: ShowModalFN) {
+export default function ContactForm({
+  setShowModal,
+  setSuccess,
+}: {
+  setShowModal: ShowModalFN;
+  setSuccess: SuccessFN;
+}) {
   // @ts-ignore
   const form = useRef<HTMLFormElement>();
   const sendEmail = (e: React.SyntheticEvent) => {
@@ -42,6 +48,8 @@ export default function ContactForm({ setShowModal }: ShowModalFN) {
           form.current.querySelector("#email").value = "";
           // @ts-ignore
           form.current.querySelector("#message").value = "";
+          setSuccess(true);
+          setShowModal(true);
         },
         (error) => {
           console.log("FAILED...", error.text);
