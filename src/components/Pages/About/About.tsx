@@ -17,10 +17,10 @@ export default function About({
             Hey, nice to meet you!
           </h1>
           <p className='backgr-p'>
-            My name's Viktor Kolev. I'm 21 years old {'(turning 22 in July)'}{' '}
-            and I'm from Aytos, Bulgaria, although I'm living in Sofia. My goal
-            is to become a Front-End Developer, have fun while doing so, paint
-            landscapes, listen to good music, eat tasty food, love and be loved.
+            My name's Viktor Kolev. I'm 2 years old and I'm from Aytos,
+            Bulgaria, although I'm living in Sofia. My goal is to become a
+            Front-End Developer, have fun while doing so, paint landscapes,
+            listen to good music, eat tasty food, love and be loved.
           </p>
         </div>
         <div className='mb-6 max-w-xl'>
